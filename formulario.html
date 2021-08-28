@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Formulario</title>
+<body style="background:aqua">
+</body>
+<style type="text/css">
+
+*{font-familiy:Arial;}
+
+
+h1{text-align:center;
+  font-size: 1.2em;
+  text-decoration:underline;}
+ form{text-align: center;}
+ 
+ div{border-style:solid;
+     border-color:green;
+     border-width: 0.2em;
+     margin-top: 2em;
+     margin-left:10em;
+     margin-right: 10em;}
+     
+</style>
+
+</head>
+
+<body>
+	
+<br>
+<h1>Llenar el siguiente formulario</h1>
+<h1>para reservar matricula</h1>
+<br>
+<form name="Formulario">
+
+<spam>Nombre</spam> <input type = "text" id="nombre"
+placeholder="Primer nombre" maxlength="15">
+<br>
+<br>
+
+<spam>Apellido</spam> <input type = "text" id="apell"
+placeholder="Primer apellido" maxlength="15">
+<br>
+<br>
+
+<spam>ID</spam> <input type = "text" id="id" placeholder="# de identidad" maxlength="15">
+<br>
+<br>
+
+<spam>Sexo:</spam>
+<spam>Femenino </spam><input type = "radio"  id="femenino">
+<spam>Masculino</spam><input type = "radio" id="masculino"
+><br>
+<br>
+<input type = "button" onclick="activar()" value="enviar">
+</form>
+<Script>
+function activar(){
+var nomb = document.getElementById("nombre").value;
+if(nomb=="")
+{alert("Griselda");return;}
+var apelli = documet.getElementById("apell").value;
+if(apalli=="")
+{alert("Vàsquez");
+return;}
+var id = document.getElementById("id").value;
+if(id=="")
+{alert("0604199600095");
+return;}
+var sex = document.getElementById("femenino");
+var sexm = document.getElementById("masculino");
+if ((!sex.checked) && (!sexm.checked))
+{alert("Femenino");
+return;}
+}
+ </Script>
+ 
+ <a href="index.html">pagina principal </a>
+ 
+ </body>
+</html>
